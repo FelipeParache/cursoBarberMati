@@ -1271,6 +1271,231 @@ h1, h2, h3 { line-height: 1.1; }
 .footer-legal a:hover { color: var(--gold); }
 
 /* ============================================================
+   PAIN SECTION (Agitación del dolor)
+============================================================ */
+
+.pain-section {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, rgba(201, 168, 76, 0.05), rgba(201, 168, 76, 0.02));
+  border-top: 1px solid var(--black-border);
+  border-bottom: 1px solid var(--black-border);
+  text-align: center;
+}
+
+.pain-title {
+  font-family: var(--font-serif);
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 2.5rem;
+}
+
+.pain-grid {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pain-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.pain-item {
+  background: rgba(22, 22, 22, 0.6);
+  border-left: 3px solid var(--gold);
+  padding: 1.25rem;
+  text-align: left;
+  border-radius: var(--radius);
+  transition: var(--transition);
+}
+
+.pain-item:hover {
+  background: rgba(22, 22, 22, 0.9);
+  transform: translateX(4px);
+}
+
+.pain-item p {
+  font-size: 0.93rem;
+  color: var(--white-dim);
+  line-height: 1.6;
+}
+
+.pain-item strong {
+  color: var(--gold);
+}
+
+.pain-close {
+  font-size: 1rem;
+  color: var(--white);
+  margin-top: 1.5rem;
+}
+
+/* ============================================================
+   METHOD SECTION (Mecanismo único)
+============================================================ */
+
+.method-section {
+  padding: 7rem 0;
+  background: var(--black);
+  text-align: center;
+}
+
+.method-pillars {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin: 4rem 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.method-pillar {
+  background: var(--black-card);
+  border: 1px solid var(--black-border);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  position: relative;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.method-pillar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-dark));
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.method-pillar:hover {
+  background: linear-gradient(135deg, #161616, #1a1500);
+  border-color: var(--gold-dark);
+  transform: translateY(-8px);
+}
+
+.pillar-num {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  color: var(--gold);
+  margin-bottom: 0.5rem;
+  opacity: 0.3;
+}
+
+.method-pillar h3 {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  color: var(--white);
+  margin-bottom: 0.75rem;
+}
+
+.method-pillar p {
+  font-size: 0.9rem;
+  color: var(--white-dim);
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.method-icon {
+  font-size: 2.5rem;
+  display: block;
+}
+
+.method-proof {
+  background: rgba(201, 168, 76, 0.08);
+  border: 1px solid rgba(201, 168, 76, 0.2);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  max-width: 500px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  color: var(--white);
+}
+
+/* ============================================================
+   RESULTS NUMBERS SECTION
+============================================================ */
+
+.results-numbers-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, rgba(0,0,0,0.5), rgba(201,168,76,0.03));
+  border-top: 1px solid var(--black-border);
+  border-bottom: 1px solid var(--black-border);
+  text-align: center;
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.result-card {
+  background: var(--black-card);
+  border: 1px solid var(--black-border);
+  border-radius: var(--radius);
+  padding: 2rem 1.5rem;
+  transition: var(--transition);
+}
+
+.result-card:hover {
+  border-color: var(--gold-dark);
+  background: linear-gradient(135deg, #161616, #1a1500);
+  transform: scale(1.05);
+}
+
+.result-number {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 6vw, 4rem);
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.result-label {
+  font-size: 0.8rem;
+  color: var(--gray-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  line-height: 1.4;
+}
+
+/* ============================================================
+   OBJECTIONS SECTION (Sin Excusas)
+============================================================ */
+
+.objections-section {
+  padding: 7rem 0;
+  background: var(--black);
+  text-align: center;
+}
+
+.objections-section .section-title { margin-bottom: 3.5rem; }
+
+/* ============================================================
+   PRICE ROI
+============================================================ */
+
+.price-roi {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+/* ============================================================
    ANIMACIONES DE SCROLL
 ============================================================ */
 

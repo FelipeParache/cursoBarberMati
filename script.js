@@ -31,7 +31,7 @@
   //    y .visible se agrega automáticamente al hacer scroll
   // ============================================================
   const fadeTargets = document.querySelectorAll(
-    '.module-card, .problem-card, .testimonial-card, .benefit-item, .faq-item, .trust-item, .gallery-item'
+    '.module-card, .problem-card, .testimonial-card, .benefit-item, .faq-item, .trust-item, .gallery-item, .pain-item, .method-pillar, .result-card'
   );
 
   if ('IntersectionObserver' in window && fadeTargets.length) {
