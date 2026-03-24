@@ -2,13 +2,22 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Curso de Barbería Profesional | Matías</title>
   <meta name="description" content="Aprendé barbería desde cero y generá tus primeros ingresos en 30 días. Método Barber 30 usado por 100+ alumnos. Garantía 7 días. Acceso de por vida." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <!-- Tipografías: Playfair Display (display elegante) + DM Sans (body limpio) -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <script>
+    // Detectar si estamos en GitHub Pages y ajustar base ruta
+    if (window.location.hostname.includes('github.io')) {
+      const base = document.createElement('base');
+      base.href = '/cursoBarberMati/';
+      document.head.appendChild(base);
+    }
+  </script>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
