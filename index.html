@@ -154,11 +154,7 @@
   <section class="about-section" id="sobre-mi">
     <div class="container about-grid">
       <div class="about-image-wrap">
-        <!-- REEMPLAZAR: URL de la foto de Matías -->
-        <div class="about-img-placeholder">
-          <span>FOTO<br/>MATÍAS</span>
-          <!-- <img src="foto-matias.jpg" alt="Matías - Barbero Profesional" /> -->
-        </div>
+        <img src="fotos/fotoLosada.jpg" alt="Matías - Barbero Profesional" class="about-img" />
         <div class="about-img-tag">9 años de oficio</div>
       </div>
       <div class="about-text">
@@ -320,21 +316,19 @@
     <div class="container">
       <div class="video-wrap">
         <div class="video-placeholder">
-          <!-- REEMPLAZAR: descomentar y poner el ID real del video de YouTube -->
-          <!--
-          <iframe
-            src="https://www.youtube.com/embed/TU_VIDEO_ID"
-            title="Matías en acción"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>
-          -->
-          <div class="video-mock">
-            <div class="play-btn" id="playBtn">▶</div>
-            <p>Mirá cómo trabajo en la barbería</p>
-            <small>Reemplazar con video real (YouTube/Vimeo)</small>
-          </div>
+          <video controls width="100%" style="border-radius: 4px;">
+            <source src="videos/videoDegradeBoss.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5
+          </video>
+          <p class="video-caption">Técnica de Degradé - En vivo desde la barbería</p>
+        </div>
+        
+        <div class="video-placeholder" style="margin-top: 3rem;">
+          <video controls width="100%" style="border-radius: 4px;">
+            <source src="videos/videoPeloBarba.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5
+          </video>
+          <p class="video-caption">Transformación: Pelo y Barba - Case Study</p>
         </div>
       </div>
     </div>

@@ -112,28 +112,9 @@
   });
 
   // ============================================================
-  // 6. PLAY BUTTON — placeholder de video (efecto visual)
-  //    Una vez que tengas un video real, este código no es necesario
+  // 6. VIDEOS — ahora usando HTML5 video tag nativo (sin necesidad de mock)
   // ============================================================
-  const playBtn = document.getElementById('playBtn');
-  if (playBtn) {
-    playBtn.addEventListener('click', () => {
-      // REEMPLAZAR: este bloque por la lógica real cuando se tenga el video
-      // Por ejemplo, si usás YouTube, reemplazar el div mock por un iframe
-      alert('¡Video próximamente disponible!');
-      /*
-        Ejemplo para activar un iframe de YouTube al hacer clic:
-        const videoWrap = document.querySelector('.video-placeholder');
-        videoWrap.innerHTML = `
-          <iframe
-            src="https://www.youtube.com/embed/TU_VIDEO_ID?autoplay=1"
-            title="Matías en acción"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-          </iframe>`;
-      */
-    });
-  }
+  // Los videos se cargan automáticamente con controles HTML5
+  // No se necesita lógica adicional
 
 })();

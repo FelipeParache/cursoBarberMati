@@ -511,6 +511,23 @@ h1, h2, h3 { line-height: 1.1; }
   display: block;
 }
 
+/* Imagen real de Matías */
+.about-img {
+  aspect-ratio: 3/4;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 2px;
+  border: 1px solid var(--black-border);
+  transition: var(--transition);
+}
+
+.about-img:hover {
+  border-color: var(--gold-dark);
+  box-shadow: 0 12px 40px rgba(201, 168, 76, 0.15);
+}
+
 /* Tag dorado sobre la imagen */
 .about-img-tag {
   position: absolute;
@@ -779,6 +796,32 @@ h1, h2, h3 { line-height: 1.1; }
   cursor: pointer;
   transition: var(--transition);
   padding-left: 4px;
+}
+
+.play-btn:hover { 
+  transform: scale(1.1);
+  box-shadow: 0 8px 30px rgba(201, 168, 76, 0.35);
+}
+
+/* Videos HTML5 */
+.video-placeholder video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.video-placeholder video::-webkit-media-controls {
+  background: var(--black-card);
+}
+
+.video-caption {
+  font-size: 0.9rem;
+  color: var(--gold);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+  letter-spacing: 0.05em;
 }
 
 .play-btn:hover { transform: scale(1.1); background: var(--gold-light); }
