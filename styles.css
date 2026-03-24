@@ -248,7 +248,7 @@ h1, h2, h3 { line-height: 1.1; }
   z-index: 2;
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 8rem 1.5rem 5rem;
+  padding: 5rem 1.5rem 3rem;
   max-width: 760px;
 }
 
@@ -265,11 +265,11 @@ h1, h2, h3 { line-height: 1.1; }
 
 .hero-title {
   font-family: var(--font-serif);
-  font-size: clamp(3.2rem, 7vw, 6rem);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
   font-weight: 900;
-  line-height: 1.02;
+  line-height: 1.15;
   color: var(--white);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   opacity: 0;
   animation: fadeUp 0.8s ease forwards 0.4s;
 }
@@ -325,7 +325,7 @@ h1, h2, h3 { line-height: 1.1; }
 /* Indicador de scroll */
 .scroll-hint {
   position: absolute;
-  bottom: 2.5rem;
+  bottom: 0.8rem;
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
