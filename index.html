@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso de Barbería Profesional | Matías</title>
+  <meta name="description" content="Aprendé barbería profesional con Matías, 9 años de experiencia. Degradés perfectos, técnica real, mentalidad de negocio." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Tipografías: Playfair Display (display elegante) + DM Sans (body limpio) -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@300;400;500;600&family=Bebas+Neue&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVBAR — barra fija con logo y CTA
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <span class="nav-logo">MATÍAS<span class="accent">.</span></span>
+      <a href="#oferta" class="btn btn-nav">QUIERO EL CURSO</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO — primera impresión, máximo impacto
+       REEMPLAZAR: background-image en styles.css (.hero)
+       REEMPLAZAR: título, subtítulo y CTA según brief final
+  ============================================================ -->
+  <section class="hero" id="inicio">
+    <div class="hero-overlay"></div>
+    <div class="hero-noise"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">— Curso Online de Barbería Profesional —</p>
+      <h1 class="hero-title">
+        Del primer<br />
+        <em>corte</em> al<br />
+        primer <span class="highlight-gold">cliente.</span>
+      </h1>
+      <p class="hero-sub">
+        Todo lo que necesitás saber para dominar degradés perfectos,<br class="br-desktop" />
+        lograr terminaciones impecables y vivir de la barbería.
+      </p>
+      <div class="hero-cta-group">
+        <a href="#oferta" class="btn btn-primary btn-large">QUIERO APRENDER AHORA</a>
+        <a href="#curso" class="btn btn-ghost">Ver qué incluye ↓</a>
+      </div>
+      <div class="hero-badges">
+        <span class="badge">✓ 9 años de experiencia</span>
+        <span class="badge">✓ Técnica real de barbería</span>
+        <span class="badge">✓ 100% online</span>
+      </div>
+    </div>
+    <!-- Scroll indicator -->
+    <div class="scroll-hint">
+      <span></span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRUEBA SOCIAL RÁPIDA — banda de confianza debajo del hero
+  ============================================================ -->
+  <div class="trust-bar">
+    <div class="trust-inner">
+      <div class="trust-item">
+        <strong>+6 años</strong>
+        <span>con barbería propia</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <strong>100+</strong>
+        <span>alumnos formados</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <strong>Clientes VIP</strong>
+        <span>incluyendo futbolistas</span>
+      </div>
+      <div class="trust-divider"></div>
+      <div class="trust-item">
+        <strong>Buenos Aires</strong>
+        <span>barbería de alto nivel</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       PROBLEMA / IDENTIFICACIÓN — conecta con el dolor del lector
+  ============================================================ -->
+  <section class="problem-section">
+    <div class="container">
+      <p class="section-label">¿TE IDENTIFICÁS?</p>
+      <h2 class="section-title">Aprender barbería no debería<br /><em>costar tanto tiempo y plata</em></h2>
+      <div class="problem-grid">
+        <div class="problem-card">
+          <span class="problem-icon">⏳</span>
+          <p>Perdiste horas viendo videos sueltos sin ningún orden ni metodología</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">💸</span>
+          <p>Gastaste en cursos presenciales caros que no te enseñaron lo que realmente se pide</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">✂️</span>
+          <p>Sabés cortar pero los degradés no te quedan como los que ves en Instagram</p>
+        </div>
+        <div class="problem-card">
+          <span class="problem-icon">😤</span>
+          <p>Querés vivir de la barbería pero no sabés por dónde arrancar ni cómo profesionalizarte</p>
+        </div>
+      </div>
+      <p class="problem-close">
+        <strong>Yo pasé exactamente por eso.</strong> Por eso creé este curso.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRESENTACIÓN DEL BARBERO — historia, experiencia, credibilidad
+       REEMPLAZAR: src de la imagen (.about-img) con foto real de Matías
+  ============================================================ -->
+  <section class="about-section" id="sobre-mi">
+    <div class="container about-grid">
+      <div class="about-image-wrap">
+        <!-- REEMPLAZAR: URL de la foto de Matías -->
+        <div class="about-img-placeholder">
+          <span>FOTO<br/>MATÍAS</span>
+          <!-- <img src="foto-matias.jpg" alt="Matías - Barbero Profesional" /> -->
+        </div>
+        <div class="about-img-tag">9 años de oficio</div>
+      </div>
+      <div class="about-text">
+        <p class="section-label">QUIÉN TE ENSEÑA</p>
+        <h2 class="section-title">Hola, soy <em>Matías</em></h2>
+        <p class="about-lead">Barbero profesional con más de 9 años de experiencia y dueño de mi propia barbería en Buenos Aires.</p>
+        <p>Arranqué a los 15 años cortando en casa a amigos y familia, con muchas ganas y videos de YouTube. Sin academia, sin padrino, sin contactos. Solo práctica y hambre de aprender.</p>
+        <p>Con el tiempo fui perfeccionando mi técnica, capacitándome y sumando experiencia hasta lograr <strong>abrir mi propia barbería hace más de 6 años</strong>. Hoy trabajo con un equipo de barberos y atendemos a cientos de clientes, incluyendo <strong>jugadores de fútbol profesional</strong>.</p>
+        <p>Me especializo en <strong>degradés</strong> (low fade, taper fade, mid fade, high fade) — los cortes más pedidos hoy — y en lograr terminaciones limpias, prolijas y profesionales <em>en el menor tiempo posible</em>.</p>
+        <p class="about-cta-text">Este curso es todo lo que a mí me hubiera gustado tener cuando empecé. Desde lo básico hasta lo avanzado, con la mentalidad correcta para vivir de esto.</p>
+        <a href="#oferta" class="btn btn-primary">QUIERO APRENDER CON VOS</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CONTENIDO DEL CURSO — módulos y beneficios
+       EDITAR: módulos, nombres y descripciones según contenido real
+  ============================================================ -->
+  <section class="course-section" id="curso">
+    <div class="container">
+      <p class="section-label">EL PROGRAMA</p>
+      <h2 class="section-title">Todo lo que vas a<br /><em>dominar</em> con este curso</h2>
+      <p class="section-sub">Desde cero o mejorando tu nivel — el método que uso en mi barbería, explicado paso a paso.</p>
+
+      <div class="modules-grid">
+        <!-- MÓDULO 1 -->
+        <div class="module-card" data-num="01">
+          <div class="module-num">01</div>
+          <h3>Fundamentos y herramientas</h3>
+          <p>Todo lo que necesitás saber antes de empezar: tipos de máquinas, peines, tijeras y cómo usarlos correctamente.</p>
+        </div>
+        <!-- MÓDULO 2 -->
+        <div class="module-card" data-num="02">
+          <div class="module-num">02</div>
+          <h3>Técnica de degradé completa</h3>
+          <p>Low fade, taper fade, mid fade y high fade. Aprende cada uno con el método que uso diariamente en mi barbería.</p>
+        </div>
+        <!-- MÓDULO 3 -->
+        <div class="module-card" data-num="03">
+          <div class="module-num">03</div>
+          <h3>Terminaciones y prolijos</h3>
+          <p>El detalle que separa un corte amateur de uno profesional: líneas limpias, nuca perfecta, patillas impecables.</p>
+        </div>
+        <!-- MÓDULO 4 -->
+        <div class="module-card" data-num="04">
+          <div class="module-num">04</div>
+          <h3>Cortes más pedidos hoy</h3>
+          <p>Los estilos que los clientes buscan más: texturizados, pelo largo en arriba, undercuts y cortes modernos.</p>
+        </div>
+        <!-- MÓDULO 5 -->
+        <div class="module-card" data-num="05">
+          <div class="module-num">05</div>
+          <h3>Velocidad y eficiencia</h3>
+          <p>Cómo lograr calidad profesional en el menor tiempo posible. La clave para atender más clientes sin bajar el nivel.</p>
+        </div>
+        <!-- MÓDULO 6 -->
+        <div class="module-card" data-num="06">
+          <div class="module-num">06</div>
+          <h3>Mentalidad y negocio</h3>
+          <p>Cómo cobrar lo que vale tu trabajo, fidelizar clientes y construir una barbería sustentable que te dé libertad.</p>
+        </div>
+      </div>
+
+      <!-- Beneficios tipo checklist -->
+      <div class="benefits-box">
+        <h3>Con este curso vas a poder:</h3>
+        <ul class="benefits-list">
+          <li>✓ Ejecutar degradés limpios y perfectos en todos sus niveles</li>
+          <li>✓ Lograr terminaciones prolijas que marquen la diferencia</li>
+          <li>✓ Trabajar con velocidad sin sacrificar calidad</li>
+          <li>✓ Atender los cortes más pedidos en el mercado actual</li>
+          <li>✓ Cobrar más por tu trabajo con confianza</li>
+          <li>✓ Construir una clientela fiel y sostenible</li>
+          <li>✓ Empezar a vivir de la barbería</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       GALERÍA — imágenes de cortes y videos
+       REEMPLAZAR: los placeholders con imágenes y videos reales
+       Para videos: reemplazar el placeholder con <iframe> de YouTube/Vimeo
+  ============================================================ -->
+  <section class="gallery-section" id="galeria">
+    <div class="container">
+      <p class="section-label">EL TRABAJO HABLA</p>
+      <h2 class="section-title">Resultados <em>reales</em></h2>
+      <p class="section-sub">Estos son algunos de los cortes que salen de mi barbería todos los días.</p>
+    </div>
+
+    <!-- Grid de fotos — REEMPLAZAR src con fotos reales de cortes -->
+    <div class="gallery-grid">
+      <div class="gallery-item tall">
+        <div class="gallery-placeholder">Foto corte 1<br/><small>Reemplazar con imagen real</small></div>
+        <!-- <img src="corte-1.jpg" alt="Degradé low fade" loading="lazy" /> -->
+        <div class="gallery-label">Low Fade</div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">Foto corte 2</div>
+        <!-- <img src="corte-2.jpg" alt="Taper fade" loading="lazy" /> -->
+        <div class="gallery-label">Taper Fade</div>
+      </div>
+      <div class="gallery-item">
+        <div class="gallery-placeholder">Foto corte 3</div>
+        <!-- <img src="corte-3.jpg" alt="Mid fade" loading="lazy" /> -->
+        <div class="gallery-label">Mid Fade</div>
+      </div>
+      <div class="gallery-item tall">
+        <div class="gallery-placeholder">Foto corte 4<br/><small>Reemplazar con imagen real</small></div>
+        <!-- <img src="corte-4.jpg" alt="High fade" loading="lazy" /> -->
+        <div class="gallery-label">High Fade</div>
+      </div>
+      <div class="gallery-item wide">
+        <div class="gallery-placeholder">Foto corte 5 — panorámica</div>
+        <!-- <img src="corte-5.jpg" alt="Corte completo" loading="lazy" /> -->
+        <div class="gallery-label">Terminación prolija</div>
+      </div>
+    </div>
+
+    <!-- Sección de video — REEMPLAZAR con iframe real -->
+    <div class="container">
+      <div class="video-wrap">
+        <div class="video-placeholder">
+          <!-- REEMPLAZAR: descomentar y poner el ID real del video de YouTube -->
+          <!--
+          <iframe
+            src="https://www.youtube.com/embed/TU_VIDEO_ID"
+            title="Matías en acción"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+          </iframe>
+          -->
+          <div class="video-mock">
+            <div class="play-btn" id="playBtn">▶</div>
+            <p>Mirá cómo trabajo en la barbería</p>
+            <small>Reemplazar con video real (YouTube/Vimeo)</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       TESTIMONIOS — prueba social
+       EDITAR: agregar testimonios reales cuando estén disponibles
+  ============================================================ -->
+  <section class="testimonials-section" id="testimonios">
+    <div class="container">
+      <p class="section-label">LO QUE DICEN</p>
+      <h2 class="section-title">Resultados de<br /><em>alumnos reales</em></h2>
+
+      <div class="testimonials-grid">
+        <!-- TESTIMONIO 1 — REEMPLAZAR con testimonio real -->
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Empecé sin saber nada de degradés y después de este curso mis clientes me dicen que nunca los vieron tan bien. El método de Matías es claro y directo al punto."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JM</div>
+            <div>
+              <strong>Juan M.</strong>
+              <span>Barbero, Córdoba</span>
+            </div>
+          </div>
+        </div>
+        <!-- TESTIMONIO 2 — REEMPLAZAR con testimonio real -->
+        <div class="testimonial-card featured">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Lo que más me cambió fue la parte de velocidad y eficiencia. Ahora atiendo el doble de clientes por día con mejor resultado. Valió cada peso."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">RL</div>
+            <div>
+              <strong>Rodrigo L.</strong>
+              <span>Barbero independiente, BsAs</span>
+            </div>
+          </div>
+        </div>
+        <!-- TESTIMONIO 3 — REEMPLAZAR con testimonio real -->
+        <div class="testimonial-card">
+          <div class="stars">★★★★★</div>
+          <p class="testimonial-text">"Venía cortando de hace 2 años pero sentía que me faltaba algo. Este curso me dio la base que necesitaba para subir mis precios con confianza."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">FG</div>
+            <div>
+              <strong>Federico G.</strong>
+              <span>Barbero, Rosario</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Nota para reemplazar testimonios -->
+      <!-- <p class="replace-note">💡 REEMPLAZAR ESTOS TESTIMONIOS CON LOS REALES (capturas, texto real, nombre + ciudad)</p> -->
+    </div>
+  </section>
+
+  <!-- ============================================================
+       OFERTA — precio, bonus y garantía
+       EDITAR: precio, nombre del producto, bonus y garantía reales
+  ============================================================ -->
+  <section class="offer-section" id="oferta">
+    <div class="offer-bg-pattern"></div>
+    <div class="container">
+      <p class="section-label">LA OFERTA</p>
+      <h2 class="section-title offer-title">Invertí en tu<br /><em>carrera hoy</em></h2>
+
+      <div class="offer-card">
+        <div class="offer-badge-top">OFERTA DE LANZAMIENTO</div>
+
+        <div class="offer-content">
+          <div class="offer-left">
+            <h3 class="product-name">Curso Profesional de Barbería</h3>
+            <p class="product-tagline">con Matías — 9 años de experiencia en un solo curso</p>
+
+            <ul class="offer-includes">
+              <li>✓ Acceso completo al curso en video</li>
+              <li>✓ 6 módulos con técnicas paso a paso</li>
+              <li>✓ Degradés: low, taper, mid y high fade</li>
+              <li>✓ Técnicas de terminaciones y prolijos</li>
+              <li>✓ Módulo de velocidad y eficiencia</li>
+              <li>✓ Módulo de mentalidad y negocio</li>
+              <li>✓ Acceso de por vida al contenido</li>
+              <li>✓ Actualizaciones incluidas</li>
+            </ul>
+
+            <!-- BONUS — EDITAR o eliminar si no hay bonus -->
+            <div class="bonus-section">
+              <p class="bonus-label">+ BONUS EXCLUSIVOS</p>
+              <ul class="bonus-list">
+                <li>🎁 Guía de precios para barberos</li>
+                <li>🎁 Lista de herramientas recomendadas</li>
+                <li>🎁 Acceso al grupo privado de alumnos</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="offer-right">
+            <div class="price-block">
+              <!-- REEMPLAZAR: precio tachado y precio real -->
+              <p class="price-old">~~ARS $50.000~~</p>
+              <p class="price-label">HOY SOLO</p>
+              <p class="price-main">ARS <strong>$29.900</strong></p>
+              <!-- O precio en USD si corresponde -->
+              <!-- <p class="price-usd">USD <strong>29</strong></p> -->
+              <p class="price-note">Pago único — acceso de por vida</p>
+
+              <a href="#" class="btn btn-primary btn-xlarge btn-pulse">
+                QUIERO EL CURSO AHORA
+              </a>
+              <!-- REEMPLAZAR: # con el link de pago real (MercadoPago, etc.) -->
+
+              <p class="payment-methods">💳 MercadoPago · Tarjetas · Transferencia</p>
+
+              <!-- GARANTÍA -->
+              <div class="guarantee-box">
+                <span class="guarantee-icon">🛡️</span>
+                <div>
+                  <strong>Garantía de 7 días</strong>
+                  <p>Si en los primeros 7 días no estás conforme, te devolvemos el dinero sin preguntas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Urgencia -->
+      <p class="urgency-text">⚡ Precio de lanzamiento por tiempo limitado. Cuando termine la promo, el precio sube.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA SECUNDARIO — refuerzo antes del FAQ
+  ============================================================ -->
+  <section class="cta-mid">
+    <div class="container cta-mid-inner">
+      <h2>¿Seguís esperando el<br /><em>momento perfecto?</em></h2>
+      <p>El momento perfecto es ahora. Cada día que esperás es un día más trabajando sin el nivel que podrías tener.</p>
+      <a href="#oferta" class="btn btn-primary btn-large">EMPEZAR HOY</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ — preguntas frecuentes
+       EDITAR: agregar preguntas relevantes para tu audiencia
+  ============================================================ -->
+  <section class="faq-section" id="faq">
+    <div class="container">
+      <p class="section-label">PREGUNTAS FRECUENTES</p>
+      <h2 class="section-title">¿Tenés dudas?<br /><em>Acá las respondo</em></h2>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            ¿Necesito experiencia previa para hacer el curso?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>No. El curso está diseñado para arrancar desde cero, pero también sirve si ya tenés experiencia y querés mejorar tu técnica. Empezamos desde los fundamentos y avanzamos gradualmente.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            ¿Por cuánto tiempo tengo acceso al curso?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>El acceso es de por vida. Una vez que comprás, los videos quedan disponibles para vos para siempre, incluyendo las futuras actualizaciones del contenido.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            ¿Cómo accedo al contenido después de comprar?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Después de completar el pago recibís un email con el acceso a la plataforma. Podés ver los videos desde cualquier dispositivo: celular, tablet o computadora.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            ¿El curso sirve si ya soy barbero hace tiempo?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Sí. Muchos alumnos que ya cortaban encontraron en este curso las bases que les faltaban para subir su nivel, trabajar más rápido y cobrar más. La parte de mentalidad y negocio también es muy valorada por barberos con experiencia.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            ¿Qué pasa si no me convence el curso?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <p>Tenés 7 días de garantía total. Si por cualquier motivo no estás conforme, te devolvemos el 100% de lo que pagaste, sin preguntas y sin complicaciones.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">
+            ¿Puedo comprar con tarjeta de crédito o en cuotas?
+            <span class="faq-arrow">↓</span>
+          </button>
+          <div class="faq-answer">
+            <!-- EDITAR: actualizar según métodos de pago reales -->
+            <p>Sí, aceptamos tarjetas de crédito y débito, MercadoPago y transferencia bancaria. Para consultar opciones de cuotas, escribinos por Instagram o WhatsApp.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA FINAL — última llamada a la acción
+  ============================================================ -->
+  <section class="cta-final" id="cta">
+    <div class="container cta-final-inner">
+      <p class="section-label">TOMÁ LA DECISIÓN</p>
+      <h2 class="cta-final-title">
+        Un corte cambia el look.<br />
+        <em>Este curso cambia tu vida.</em>
+      </h2>
+      <p>Más de 9 años de experiencia condensados en un método claro, directo y probado. La inversión más inteligente que podés hacer por tu carrera.</p>
+      <a href="#oferta" class="btn btn-primary btn-xlarge btn-pulse">EMPEZAR AHORA →</a>
+      <p class="cta-small">🛡️ Recordá: tenés 7 días de garantía total.</p>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+       REEMPLAZAR: links de redes sociales y contacto reales
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="nav-logo">MATÍAS<span class="accent">.</span></span>
+        <p>Barbero profesional · Buenos Aires</p>
+      </div>
+      <div class="footer-links">
+        <!-- REEMPLAZAR: con links reales -->
+        <a href="#">Instagram</a>
+        <a href="#">WhatsApp</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div class="footer-legal">
+        <p>© 2025 Matías Barbería. Todos los derechos reservados.</p>
+        <a href="#">Política de privacidad</a> · <a href="#">Términos y condiciones</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
