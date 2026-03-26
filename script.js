@@ -1,120 +1,39 @@
-/* ============================================================
-   script.js — Interactividad de la landing page
-   Incluye:
-   - Navbar sticky con efecto scroll
-   - Animaciones de entrada con IntersectionObserver
-   - Acordeón FAQ
-   - Smooth scroll en links ancla
-============================================================ */
-
-(function () {
-  'use strict';
-
-  // ============================================================
-  // 1. NAVBAR — agregar clase .scrolled al hacer scroll
-  // ============================================================
-  const navbar = document.getElementById('navbar');
-
-  if (navbar) {
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 60) {
-        navbar.classList.add('scrolled');
-      } else {
-        navbar.classList.remove('scrolled');
-      }
-    }, { passive: true });
+const deadline = new Date(2025, 2, 30, 23, 59, 0).getTime();
+function tick() {
+  const diff = deadline - Date.now();
+  if (diff <= 0) {
+    document.querySelector(".urgency-bar").style.display = "none";
+    return;
   }
+  const pad = (n) => String(Math.floor(n)).padStart(2, "0");
+  document.getElementById("t-d").textContent = pad(diff / 86400000);
+  document.getElementById("t-h").textContent = pad((diff % 86400000) / 3600000);
+  document.getElementById("t-m").textContent = pad((diff % 3600000) / 60000);
+  document.getElementById("t-s").textContent = pad((diff % 60000) / 1000);
+}
+tick();
+setInterval(tick, 1000);
 
-  // ============================================================
-  // 2. ANIMACIONES DE ENTRADA — fade-in al entrar en viewport
-  //    Agrega la clase .fade-in a los elementos que querés animar
-  //    y .visible se agrega automáticamente al hacer scroll
-  // ============================================================
-  const fadeTargets = document.querySelectorAll(
-    '.module-card, .problem-card, .testimonial-card, .benefit-item, .faq-item, .trust-item, .gallery-item, .pain-item, .method-pillar, .result-card'
-  );
-
-  if ('IntersectionObserver' in window && fadeTargets.length) {
-    // Agregar clase fade-in a todos los targets
-    fadeTargets.forEach((el) => el.classList.add('fade-in'));
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target); // dejar de observar tras activar
-        }
-      });
-    }, {
-      threshold: 0.12,
-      rootMargin: '0px 0px -40px 0px'
-    });
-
-    fadeTargets.forEach((el) => observer.observe(el));
-  }
-
-  // ============================================================
-  // 3. ACORDEÓN FAQ — abrir/cerrar respuestas
-  // ============================================================
-  const faqButtons = document.querySelectorAll('.faq-question');
-
-  faqButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const isOpen = btn.getAttribute('aria-expanded') === 'true';
-      const answer = btn.nextElementSibling;
-
-      // Cerrar todos los demás
-      faqButtons.forEach((otherBtn) => {
-        if (otherBtn !== btn) {
-          otherBtn.setAttribute('aria-expanded', 'false');
-          const otherAnswer = otherBtn.nextElementSibling;
-          if (otherAnswer) otherAnswer.classList.remove('open');
-        }
-      });
-
-      // Toggle del actual
-      btn.setAttribute('aria-expanded', String(!isOpen));
-      if (answer) answer.classList.toggle('open', !isOpen);
-    });
+document.querySelectorAll(".faq-q").forEach((q) => {
+  q.addEventListener("click", () => {
+    const item = q.closest(".faq-item");
+    const open = item.classList.contains("open");
+    document
+      .querySelectorAll(".faq-item")
+      .forEach((i) => i.classList.remove("open"));
+    if (!open) item.classList.add("open");
   });
+});
 
-  // ============================================================
-  // 4. SMOOTH SCROLL — para todos los links ancla (#)
-  // ============================================================
-  document.querySelectorAll('a[href^="#"]').forEach((link) => {
-    link.addEventListener('click', (e) => {
-      const href = link.getAttribute('href');
-      if (href === '#') return;
-
-      const target = document.querySelector(href);
-      if (target) {
-        e.preventDefault();
-        const offset = 80; // altura del navbar fijo
-        const top = target.getBoundingClientRect().top + window.scrollY - offset;
-        window.scrollTo({ top, behavior: 'smooth' });
+const io = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) {
+        e.target.classList.add("vis");
+        io.unobserve(e.target);
       }
     });
-  });
-
-  // ============================================================
-  // 5. STAGGER ANIMATION — módulos y cards con delay escalonado
-  // ============================================================
-  const staggerGroups = [
-    '.modules-grid .module-card',
-    '.problem-grid .problem-card',
-    '.testimonials-grid .testimonial-card',
-  ];
-
-  staggerGroups.forEach((selector) => {
-    document.querySelectorAll(selector).forEach((el, i) => {
-      el.style.transitionDelay = `${i * 0.08}s`;
-    });
-  });
-
-  // ============================================================
-  // 6. VIDEOS — ahora usando HTML5 video tag nativo (sin necesidad de mock)
-  // ============================================================
-  // Los videos se cargan automáticamente con controles HTML5
-  // No se necesita lógica adicional
-
-})();
+  },
+  { threshold: 0.08 },
+);
+document.querySelectorAll(".fu").forEach((el) => io.observe(el));
