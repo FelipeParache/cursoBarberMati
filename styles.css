@@ -556,7 +556,7 @@ nav {
   background: var(--surface);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
-  padding: 60px 0;
+  padding: 80px 0;
 }
 
 .instructor-inner {
@@ -567,7 +567,8 @@ nav {
 }
 
 .instructor-photo-wrap {
-  width: 180px;
+  width: 320px;
+  height: 420px;
   margin: 0 auto 28px;
   position: relative;
 }
@@ -655,7 +656,7 @@ nav {
   color: var(--muted);
   font-weight: 300;
   line-height: 1.75;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .instructor-p strong {
@@ -664,15 +665,15 @@ nav {
 }
 
 .creds {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  margin-top: 20px;
-  text-align: left;
-  max-width: 280px;
-  margin-left: auto;
-  margin-right: auto;
-}
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+    text-align: left;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
 .cred {
   display: flex;
@@ -1390,8 +1391,8 @@ footer {
   /* Instructor side-by-side */
   .instructor-inner {
     display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 52px;
+    grid-template-columns: 320px 1fr;
+    gap: 60px;
     align-items: center;
     text-align: left;
     padding: 0 40px;
