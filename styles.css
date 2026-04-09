@@ -1282,14 +1282,13 @@ footer {
 }
 
 .gallery-item {
-    position: relative;
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    overflow: hidden;
-    transition: border-color .3s, transform .2s;
-    aspect-ratio: 2 / 3;
-}
+     position: relative;
+     background: var(--card);
+     border: 1px solid var(--border);
+     border-radius: 8px;
+     overflow: hidden;
+     transition: border-color .3s, transform .2s;
+ }
 
 .gallery-item:hover {
    border-color: var(--border-gold);
